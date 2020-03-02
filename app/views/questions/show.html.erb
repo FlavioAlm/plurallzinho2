@@ -1,0 +1,30 @@
+<table class="table table-bordered table-hover">
+  <p>
+    <div class="row">
+      <div class="col-sm-8">
+          <div class="form-group">
+          <tr>
+            <strong>Dúvida: </strong>
+            <td><%= @question.content %></td>
+          </tr>
+          </div>
+        </div>
+    </div>
+  </p>
+</table>
+
+<td>
+  <%= link_to 'Excluir', question_path(@question), method: :delete, data: { confirm:'Are you sure?'}, class:"btn btn-danger" %> |
+  <%= link_to 'Editar', edit_question_path(@question), class:"btn btn-default" %><p></p> 
+</td>
+
+
+
+<br><%= render @question.answer %>
+
+<% question = @question.answer %>
+<% if question.empty? %>
+    <%= render 'answers/form' %>
+<% end %>
+
+<%= link_to 'Voltar', questions_path, class:"btn btn-default" %>

@@ -1,0 +1,15 @@
+<h3>Responder dúvida:</h3>
+
+<%= form_with(model: [ @question, @question.answer.build ], local: true) do |form| %>
+  <table class="table table-borderer table-hover">
+    <p>   
+      <td >
+        <%= form.text_area :body %>
+      </td>
+    </p>   
+  </table>
+
+  <p>
+    <%= form.submit "Enviar", class:"btn btn-success"  %>
+  </p>
+<% end %>

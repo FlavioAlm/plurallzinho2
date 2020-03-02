@@ -1,0 +1,29 @@
+<table class="table table-bordered table-hover">
+  <tr>
+    <div class="alert alert-success" role="alert">
+        <b><p align="right"> Total de dúvidas: <%= @questions.count %></p></b>
+        <p align="center"><th class="alert-heading"> Dúdivas </th><br></p>
+        <td colspan = 1></td>
+    </div>
+    <th></th>
+  </tr>
+ 
+  <% @questions.each do |question| %>
+    <tr>
+        <td><%= question.content %></td>
+        <td align="center"><%= link_to 'Editar', edit_question_path(question),  class:"btn btn-default" %>  </td>
+        <td align="center"><%= link_to 'Ver', question_path(question),  class:"btn btn-default" %></td>
+    </tr>
+  <% end %>
+</table>
+
+<div class="btn btn-default">
+    <%= link_to 'Mandar dúvida', new_question_path %>
+</div>
+
+<div class="container">             
+  <ul class="pager">
+    <li><a href="#">Anterior</a></li>
+    <li><a href="#">Próxima</a></li>
+  </ul>
+</div>
