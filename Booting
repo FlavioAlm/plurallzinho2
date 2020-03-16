@@ -1,0 +1,13 @@
+*** SIGUSR2 not implemented, signal based restart unavailable!
+*** SIGUSR1 not implemented, signal based restart unavailable!
+*** SIGHUP not implemented, signal based logs reopening unavailable!
+Puma starting in single mode...
+* Version 4.3.3 (ruby 2.5.7-p206), codename: Mysterious Traveller
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-03-02 11:44:38 -0300 ===
+- Goodbye!
+Deseja finalizar o arquivo em lotes (S/N)? Deseja finalizar o arquivo em lotes (S/N)? Deseja finalizar o arquivo em lotes (S/N)? Deseja finalizar o arquivo em lotes (S/N)? Deseja finalizar o arquivo em lotes (S/N)? Deseja finalizar o arquivo em lotes (S/N)? Deseja finalizar o arquivo em lotes (S/N)? Deseja finalizar o arquivo em lotes (S/N)? 

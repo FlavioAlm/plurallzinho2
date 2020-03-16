@@ -19,12 +19,10 @@
 </td>
 
 
-
-<br><%= render @question.answer %>
-
-<% question = @question.answer %>
-<% if question.empty? %>
-    <%= render 'answers/form' %>
+<% if @should_show_create_form %>
+  <%= render 'answers/form' %>
+<% else %>
+  <%= render @question.answer %>
 <% end %>
 
 <%= link_to 'Voltar', questions_path, class:"btn btn-default" %>
